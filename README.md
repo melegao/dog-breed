@@ -4,13 +4,14 @@
 
 Esperamos entender melhor os seguintes pontos:
 
-* Como você organiza o projeto
+* Como você organiza e documenta o projeto
 * Seu estilo de trabalho e código
 * Seu nível de conhecimento sobre as ferramentas requeridas
 
 ## Ferramentas sugeridas
 
-* React Native / Expo
+* React+Typescript
+* IoC
 * Testes
 * Linter
 
