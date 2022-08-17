@@ -1,0 +1,15 @@
+.menuBarContainer{
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    padding: 5px 10px;
+}
+
+.btnLogout{
+    background-color: #000332;
+    border: 1px solid #000332;
+    border-radius: 8px;
+    color: #c1c1c1;
+    padding: 5px 15px;
+    cursor: pointer;
+}

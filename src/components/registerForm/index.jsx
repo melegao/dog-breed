@@ -1,3 +1,4 @@
+import "./index.css"
 import * as yup from 'yup';
 import { useForm } from "react-hook-form";
 import { yupResolver } from '@hookform/resolvers/yup';
@@ -30,7 +31,6 @@ function RegisterForm () {
         toast.success("Registrado com sucesso!")
         localStorage.setItem('token', data.token)
         navigate("/dogs")
-        console.log(data)
     }
 
     const handleError = (err) => {
@@ -38,14 +38,14 @@ function RegisterForm () {
     }
 
     return(
-        <>
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <label>Insira seu e-mail</label>
-                <input type="text" {...register('email')}/>
-                {errors.email && <span>{errors.email.message}</span>}
-                <button type='submit'>Continuar</button>
+        <div className="containerLogin">
+            <form onSubmit={handleSubmit(onSubmit)} className='formLogin'>
+                <label className="labelLogin">Para continuar, insira seu e-mail</label>
+                <input placeholder='E-mail' type="text" {...register('email')}/>
+                {errors.email && <span className="errorSpan">{errors.email.message}</span>}
+                <button type='submit' className="btnContinue">Continuar</button>
             </form>
-        </>
+        </div>
     )
 }
 

@@ -1,0 +1,24 @@
+.ulMenuDogs{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+.menuDogsItem{
+    margin-top: 10px;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 5px;
+    cursor: pointer;
+    background-color: #d8b49f;
+}
+
+.breedName{
+    font-size: 13px;
+}
+
+.menuDogsItem:hover{
+    transform: scale(1.1);
+}

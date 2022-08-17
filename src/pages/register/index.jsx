@@ -1,12 +1,14 @@
+import "./style.css"
 import RegisterForm from "../../components/registerForm"
+import cuteDogsLogo from "../../images/cuteDogsLogo.svg"
 
 
 function Register () {
 
 
     return (
-        <div>
-            <h3>Registre-se</h3>
+        <div className="mainLogin">
+            <img height={150} src={cuteDogsLogo} alt="CuteDog"/>
             <RegisterForm />
         </div>
     )

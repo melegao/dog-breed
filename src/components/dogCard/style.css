@@ -1,0 +1,21 @@
+.divImgDog{
+    min-width: 150px;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #000332;
+    background-color: #ffefe6;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.imgDog{
+    max-width: 140px;
+    max-height: 140px;
+    border-radius: 10px;
+}
+
+.divImgDog:hover{
+    transform: scale(1.05);
+}
