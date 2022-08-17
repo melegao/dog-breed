@@ -20,6 +20,7 @@ function DogCard (props) {
                 onClick={() => setModalOpen(true)}/>
             <Modal isOpen={modalOpen}
             onRequestClose={() => setModalOpen(false)}
+            
             style={
                 {
                     overlay: {
@@ -32,7 +33,9 @@ function DogCard (props) {
                         right: '40px',
                         bottom: '40px',
                         display: 'flex',
+                        flexDirection: 'column',
                         justifyContent: 'center',
+                        gap: '10px',
                         alignItems: 'center',
                         backgroundColor: 'white'
                     }
@@ -40,6 +43,7 @@ function DogCard (props) {
             }
             >
                 <img height={400} src={img} alt="" />
+                <button onClick={() => setModalOpen(false)} className='closeModalBtn'>FECHAR</button>
             </Modal>
         </div>
     )

@@ -19,3 +19,11 @@
 .divImgDog:hover{
     transform: scale(1.05);
 }
+.closeModalBtn{
+    background-color: #000332;
+    border: 1px solid #000332;
+    border-radius: 8px;
+    color: #c1c1c1;
+    padding: 5px 15px;
+    cursor: pointer;
+}
